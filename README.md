@@ -3,4 +3,4 @@ Flutter Widget的使用例子。例子来源来自[flutter-go](https://github.co
 
 本demo可以直接查看源码，再也不用担心记不住怎么写了。
 
-<img src="https://github.com/flywo/FlutterWidgetUseExample/blob/main/1.gif" width="100%" height="100%">
+<img src="https://github.com/flywo/FlutterWidgetUseExample/blob/main/1.gif" width="50%" height="50%">
