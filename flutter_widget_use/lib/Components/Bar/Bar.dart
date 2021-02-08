@@ -4,6 +4,9 @@ import 'package:flutter_widget_use/Components/Bar/BottomAppBar/BottomAppBar.dart
 import 'package:flutter_widget_use/Components/Bar/ButtonBar/ButtonBar.dart';
 import 'package:flutter_widget_use/Components/Bar/FlexibleSpaceBar/FlexibleSpaceBar.dart';
 import 'package:flutter_widget_use/Components/Bar/SliverAppBar/SliverAppBar.dart';
+import 'package:flutter_widget_use/Components/Bar/SnackBar/SnackBar.dart';
+import 'package:flutter_widget_use/Components/Bar/SnackBarAction/SnackBarAction.dart';
+import 'package:flutter_widget_use/Components/Bar/Tabbar/Tabbar.dart';
 import '../../Common/MyListView.dart';
 
 /*
@@ -30,6 +33,12 @@ class MyBar extends StatelessWidget {
           return MyFlexibleSpaceBar();
         } else if (index == 4) {
           return MySliverAppBar();
+        } else if (index == 5) {
+          return MySnackBar();
+        } else if (index == 6) {
+          return MySnackBarAction();
+        } else if (index == 7) {
+          return MyTabbar();
         }
         return MyAppBar();
       },

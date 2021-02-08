@@ -24,9 +24,11 @@ class WidgetUseShowView extends StatelessWidget {
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return Scaffold(
                     appBar: AppBar(title: Text(title),),
-                    body: WidgetWithCodeView(
-                      child: next,
-                      sourceFilePath: nextPath,
+                    body: SafeArea(
+                      child: WidgetWithCodeView(
+                        child: next,
+                        sourceFilePath: nextPath,
+                      ),
                     ),
                   );
                 }));
