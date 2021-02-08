@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widget_use/Components/Bar/AppBar/AppBar.dart';
 import 'package:flutter_widget_use/Components/Bar/BottomAppBar/BottomAppBar.dart';
 import 'package:flutter_widget_use/Components/Bar/ButtonBar/ButtonBar.dart';
+import 'package:flutter_widget_use/Components/Bar/FlexibleSpaceBar/FlexibleSpaceBar.dart';
+import 'package:flutter_widget_use/Components/Bar/SliverAppBar/SliverAppBar.dart';
 import '../../Common/MyListView.dart';
 
 /*
@@ -24,6 +26,10 @@ class MyBar extends StatelessWidget {
           return MyBottomAppBar();
         } else if (index == 2) {
           return MyButtonBar();
+        } else if (index == 3) {
+          return MyFlexibleSpaceBar();
+        } else if (index == 4) {
+          return MySliverAppBar();
         }
         return MyAppBar();
       },

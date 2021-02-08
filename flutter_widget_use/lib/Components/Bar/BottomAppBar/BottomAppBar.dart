@@ -16,7 +16,7 @@ class MyBottomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetUseShowView(
-      title: "AppBar",
+      title: "BottomAppBar",
       next: AppBarLessDefaultSimple(),
       nextPath: "lib/Code/BottomAppBarCode.dart",
       markdown: _Text0 + _Text1,
