@@ -22,6 +22,7 @@ class MyGridTile extends StatelessWidget {
       next: GridTileDemo(),
       nextPath: "lib/Code/GridTileCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/Dialog-class.html',
     );
   }
 }

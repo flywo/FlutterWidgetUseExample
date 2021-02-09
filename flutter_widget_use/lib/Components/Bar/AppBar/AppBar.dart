@@ -39,6 +39,7 @@ class MyAppBar extends StatelessWidget {
       ),
       nextPath: "lib/Code/AppBarCode.dart",
       markdown: _Text0 + _Text1 + _Text2,
+      url: 'https://docs.flutter.io/flutter/material/AppBar-class.html',
     );
   }
 }

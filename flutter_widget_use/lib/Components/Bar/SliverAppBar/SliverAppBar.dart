@@ -23,6 +23,7 @@ class MySliverAppBar extends StatelessWidget {
       next: Center(child: SliverAppBarLessDefault()),
       nextPath: "lib/Code/SliverAppBarCode.dart",
       markdown: _Text0 + _Text1,
+      url: 'https://docs.flutter.io/flutter/widgets/SliverAppBar-class.html',
     );
   }
 }

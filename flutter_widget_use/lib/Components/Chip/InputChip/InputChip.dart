@@ -23,6 +23,7 @@ class MyInputChip extends StatelessWidget {
       next: FilterChipDemo(),
       nextPath: "lib/Code/InputChipCode.dart",
       markdown: content0 + content1,
+      url: 'https://docs.flutter.io/flutter/material/InputChip-class.html',
     );
   }
 }

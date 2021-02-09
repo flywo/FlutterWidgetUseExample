@@ -21,6 +21,7 @@ class MyChoiceChip extends StatelessWidget {
       next: ChoiceChipDemo(),
       nextPath: "lib/Code/ChoiceChipCode.dart",
       markdown: content0 + content1,
+      url: 'https://docs.flutter.io/flutter/material/ChoiceChip-class.html',
     );
   }
 }

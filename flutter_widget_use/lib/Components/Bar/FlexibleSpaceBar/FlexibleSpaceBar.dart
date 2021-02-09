@@ -22,6 +22,7 @@ class MyFlexibleSpaceBar extends StatelessWidget {
       next: Center(child: FlexibleSpaceBarLessDefault()),
       nextPath: "lib/Code/FlexibleSpaceBarCode.dart",
       markdown: _Text0 + _Text1,
+      url: 'https://docs.flutter.io/flutter/material/FlexibleSpaceBar-class.html',
     );
   }
 }

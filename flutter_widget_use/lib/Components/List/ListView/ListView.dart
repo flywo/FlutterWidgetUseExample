@@ -46,6 +46,7 @@ class MyListView extends StatelessWidget {
       next: ListViewLessDefault(0),
       nextPath: "lib/Code/ListViewCode.dart",
       markdown: _Text0 + _Text1 + _Text2 + _Text3 + _Text4 + _Text5,
+      url: "https://docs.flutter.io/flutter/widgets/ListView-class.html",
     );
   }
 }

@@ -27,6 +27,7 @@ class MyRawChip extends StatelessWidget {
       next: FilterChipDemo(),
       nextPath: "lib/Code/RawChipCode.dart",
       markdown: content0 + content1,
+      url: 'https://docs.flutter.io/flutter/material/RawChip-class.html',
     );
   }
 }

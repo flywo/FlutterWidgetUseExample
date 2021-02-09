@@ -16,6 +16,7 @@ class MyGridPager extends StatelessWidget {
       next: GridPaperDemo(),
       nextPath: "lib/Code/GridPaperCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/GridPaper-class.html',
     );
   }
 }

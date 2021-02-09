@@ -35,6 +35,7 @@ class MyCustomDialog extends StatelessWidget {
       ),
       nextPath: "lib/Code/Dialog.dart",
       markdown: _Text0 + _Text1,
+      url: 'https://docs.flutter.io/flutter/material/Dialog-class.html',
     );
   }
 }

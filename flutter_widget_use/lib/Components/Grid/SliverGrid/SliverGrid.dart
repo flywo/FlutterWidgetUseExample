@@ -26,6 +26,7 @@ class MySliverGrid extends StatelessWidget {
       next: SliverGridDemo(),
       nextPath: "lib/Code/SliverGridCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/SliverGrid-class.html',
     );
   }
 }

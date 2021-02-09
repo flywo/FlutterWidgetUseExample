@@ -22,6 +22,7 @@ class MyAlertDialog extends StatelessWidget {
       next: AlertDialogDemo(),
       nextPath: "lib/Code/AlertDialogCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/AlertDialog-class.html',
     );
   }
 }

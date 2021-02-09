@@ -61,6 +61,7 @@ class MyGridView extends StatelessWidget {
       ),
       nextPath: "lib/Code/GridViewCode.dart",
       markdown: _Text0 + Text1,
+      url: 'https://docs.flutter.io/flutter/material/GridView-class.html',
     );
   }
 }

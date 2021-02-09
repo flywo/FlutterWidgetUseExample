@@ -22,6 +22,7 @@ class MyChipThemeData extends StatelessWidget {
       next: ChipThemeDemo(),
       nextPath: "lib/Code/ChipThemeDataCode.dart",
       markdown: content0 + content1,
+      url: 'https://docs.flutter.io/flutter/material/ChipThemeData-class.html',
     );
   }
 }

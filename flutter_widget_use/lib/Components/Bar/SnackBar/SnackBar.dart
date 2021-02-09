@@ -22,6 +22,7 @@ class MySnackBar extends StatelessWidget {
       next: SnackBarLessDefault(),
       nextPath: "lib/Code/SnackBarCode.dart",
       markdown: _Text0 + _Text1,
+      url: 'https://docs.flutter.io/flutter/material/SnackBar-class.html',
     );
   }
 }

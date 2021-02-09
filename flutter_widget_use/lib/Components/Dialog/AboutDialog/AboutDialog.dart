@@ -24,6 +24,7 @@ class MyAboutDialog extends StatelessWidget {
       next: AboutDialogDemo(),
       nextPath: "lib/Code/AboutDialogCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/AboutDialog-class.html',
     );
   }
 }

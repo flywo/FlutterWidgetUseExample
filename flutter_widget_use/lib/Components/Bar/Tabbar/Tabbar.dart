@@ -44,6 +44,7 @@ class MyTabbar extends StatelessWidget {
       next: TabBarDemo(),
       nextPath: "lib/Code/TabbarCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/SnackBarAction-class.html',
     );
   }
 }

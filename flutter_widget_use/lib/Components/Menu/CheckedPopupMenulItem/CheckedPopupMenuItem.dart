@@ -24,6 +24,7 @@ class MyCPMI extends StatelessWidget {
       next: CheckedPopupMenuItemDemo(),
       nextPath: "lib/Code/CheckedPopupMenuItem.dart",
       markdown: content0 + content1,
+      url: "https://docs.flutter.io/flutter/material/CheckedPopupMenuItem-class.html",
     );
   }
 }

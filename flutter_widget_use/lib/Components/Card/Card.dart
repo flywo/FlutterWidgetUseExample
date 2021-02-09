@@ -19,6 +19,7 @@ class MyCard extends StatelessWidget {
       next: CardLessDefault(),
       nextPath: "lib/Code/CardCode.dart",
       markdown: _Text0 + _Text1,
+      url: 'https://docs.flutter.io/flutter/material/Card-class.html',
     );
   }
 }

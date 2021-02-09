@@ -30,6 +30,7 @@ class MyButtonBar extends StatelessWidget {
       ),
       nextPath: "lib/Code/ButtonBarCode.dart",
       markdown: _Text0 + _Text1,
+      url: 'https://docs.flutter.io/flutter/material/ButtonBar-class.html',
     );
   }
 }

@@ -26,6 +26,7 @@ class MyGridTileBar extends StatelessWidget {
       next: GridTileDemo(),
       nextPath: "lib/Code/GridTileBarCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/GridTileBar-class.html',
     );
   }
 }

@@ -20,6 +20,7 @@ class MyFilterChip extends StatelessWidget {
       next: FilterChipDemo(),
       nextPath: "lib/Code/FilterChipCode.dart",
       markdown: content0 + content1,
+      url: 'https://docs.flutter.io/flutter/material/FilterChip-class.html',
     );
   }
 }

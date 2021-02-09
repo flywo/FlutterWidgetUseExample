@@ -26,6 +26,7 @@ class MySimpleDialog extends StatelessWidget {
       next: SimpleDialogDemo(),
       nextPath: "lib/Code/SimpleDialogCode.dart",
       markdown: _Text0,
+      url: 'https://docs.flutter.io/flutter/material/SimpleDialog-class.html',
     );
   }
 }

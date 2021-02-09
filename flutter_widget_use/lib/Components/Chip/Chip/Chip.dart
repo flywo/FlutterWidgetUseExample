@@ -21,6 +21,7 @@ class MyChip extends StatelessWidget {
       next: ChipDemo(),
       nextPath: "lib/Code/ChipCode.dart",
       markdown: content0 + content1,
+      url: 'https://docs.flutter.io/flutter/material/Chip-class.html',
     );
   }
 }
