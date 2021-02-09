@@ -6,6 +6,7 @@ import 'package:flutter_widget_use/Components/Dialog/Dialog.dart';
 import 'package:flutter_widget_use/Components/Grid/Grid.dart';
 import 'package:flutter_widget_use/Components/List/List.dart';
 import 'package:flutter_widget_use/Components/Menu/Menu.dart';
+import 'package:flutter_widget_use/Components/Navigation/Navigation.dart';
 import 'Common/MyListView.dart';
 
 void main() {
@@ -15,7 +16,7 @@ void main() {
 class MyApp extends StatelessWidget {
 
   static const types = ["Components", "Elements", "Themes"];
-  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu"];
+  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation"];
   static const elements = [""];
   static const themes = [""];
 
@@ -52,6 +53,8 @@ class MyApp extends StatelessWidget {
                 return MyList();
               } else if (index == 6) {
                 return MyMenu();
+              } else if (index == 7) {
+                return MyNavigation();
               }
               return MyBar();
             },

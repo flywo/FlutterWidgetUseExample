@@ -52,10 +52,11 @@ class WidgetUseShowView extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            LineSpinFadeLoaderIndicator(ballColor: Colors.blueAccent,),
+                            LineSpinFadeLoaderIndicator(ballColor: Colors.blue,),
+                            SizedBox(width: 10,),
                             Text(
                               "加载中...",
-                              style: TextStyle(fontSize: 20, color: Colors.blueAccent),
+                              style: TextStyle(fontSize: 20, color: Colors.blue),
                             ),
                           ],
                         ),
