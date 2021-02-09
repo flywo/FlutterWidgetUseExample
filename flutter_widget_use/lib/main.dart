@@ -3,6 +3,7 @@ import 'package:flutter_widget_use/Components/Bar/Bar.dart';
 import 'package:flutter_widget_use/Components/Card/Card.dart';
 import 'package:flutter_widget_use/Components/Chip/Chip.dart';
 import 'package:flutter_widget_use/Components/Dialog/Dialog.dart';
+import 'package:flutter_widget_use/Components/Grid/Grid.dart';
 import 'Common/MyListView.dart';
 
 void main() {
@@ -12,7 +13,7 @@ void main() {
 class MyApp extends StatelessWidget {
 
   static const types = ["Components", "Elements", "Themes"];
-  static const components = ["Bar", "Card", "Chip", "Dialog"];
+  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid"];
   static const elements = [""];
   static const themes = [""];
 
@@ -43,6 +44,8 @@ class MyApp extends StatelessWidget {
                 return MyChip();
               } else if (index == 3) {
                 return MyDialog();
+              } else if (index == 4) {
+                return MyGrid();
               }
               return MyBar();
             },
