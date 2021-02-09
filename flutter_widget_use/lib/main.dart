@@ -8,6 +8,8 @@ import 'package:flutter_widget_use/Components/List/List.dart';
 import 'package:flutter_widget_use/Components/Menu/Menu.dart';
 import 'package:flutter_widget_use/Components/Navigation/Navigation.dart';
 import 'package:flutter_widget_use/Components/Panel/Panel.dart';
+import 'package:flutter_widget_use/Components/Pick/Pick.dart';
+import 'package:flutter_widget_use/Components/Progress/Progress.dart';
 import 'Common/MyListView.dart';
 
 void main() {
@@ -17,7 +19,7 @@ void main() {
 class MyApp extends StatelessWidget {
 
   static const types = ["Components", "Elements", "Themes"];
-  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation", "Panel"];
+  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation", "Panel", "Pick", "Progress"];
   static const elements = [""];
   static const themes = [""];
 
@@ -58,6 +60,10 @@ class MyApp extends StatelessWidget {
                 return MyNavigation();
               } else if (index == 8) {
                 return MyPanel();
+              } else if (index == 9) {
+                return MyPicker();
+              } else if (index == 10) {
+                return MyProgress();
               }
               return MyBar();
             },
