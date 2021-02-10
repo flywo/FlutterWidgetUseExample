@@ -12,6 +12,7 @@ import 'package:flutter_widget_use/Components/Pick/Pick.dart';
 import 'package:flutter_widget_use/Components/Progress/Progress.dart';
 import 'package:flutter_widget_use/Components/Scaffold/Scaffold.dart';
 import 'package:flutter_widget_use/Components/Scroll/Scroll.dart';
+import 'package:flutter_widget_use/Components/Tab/Tab.dart' as my;
 import 'Common/MyListView.dart';
 
 void main() {
@@ -21,7 +22,7 @@ void main() {
 class MyApp extends StatelessWidget {
 
   static const types = ["Components", "Elements", "Themes"];
-  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation", "Panel", "Pick", "Progress", "Scaffold", "Scroll"];
+  static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation", "Panel", "Pick", "Progress", "Scaffold", "Scroll", "Tab"];
   static const elements = [""];
   static const themes = [""];
 
@@ -70,6 +71,8 @@ class MyApp extends StatelessWidget {
                 return MyScaffold();
               } else if (index == 12) {
                 return Scroll();
+              } else if (index == 13) {
+                return my.Tab();
               }
               return MyBar();
             },
