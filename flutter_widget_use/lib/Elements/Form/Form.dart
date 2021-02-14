@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_widget_use/Common/MyListView.dart';
 import 'package:flutter_widget_use/Elements/Form/Button/Button.dart';
 import 'package:flutter_widget_use/Elements/Form/CheckBox/CheckBox.dart';
+import 'package:flutter_widget_use/Elements/Form/TextField/TextField.dart';
 
 class Form extends StatelessWidget {
   @override
@@ -14,6 +15,8 @@ class Form extends StatelessWidget {
           return Button();
         } else if (index == 1) {
           return CheckBox();
+        } else if (index == 2) {
+          return TextField();
         }
         return Button();
       },
