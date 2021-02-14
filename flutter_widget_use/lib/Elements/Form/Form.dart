@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_widget_use/Common/MyListView.dart';
 import 'package:flutter_widget_use/Elements/Form/Button/Button.dart';
 import 'package:flutter_widget_use/Elements/Form/CheckBox/CheckBox.dart';
+import 'package:flutter_widget_use/Elements/Form/Radio/Radio.dart';
+import 'package:flutter_widget_use/Elements/Form/Slider/Slider.dart';
 import 'package:flutter_widget_use/Elements/Form/TextField/TextField.dart';
 
 class Form extends StatelessWidget {
@@ -17,6 +19,10 @@ class Form extends StatelessWidget {
           return CheckBox();
         } else if (index == 2) {
           return TextField();
+        } else if (index == 3) {
+          return Radio();
+        } else if (index == 4) {
+          return Slider();
         }
         return Button();
       },

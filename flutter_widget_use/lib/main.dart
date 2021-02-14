@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
 
 class WidgetHome extends StatelessWidget {
 
-  static const types = ["Components 部件", "Elements 元素", "Themes 主题"];
+  static const types = ["Components", "Elements", "Themes"];
   static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation", "Panel", "Pick", "Progress", "Scaffold", "Scroll", "Tab"];
   static const elements = ["Form", "Frame", "Media"];
   static const themes = [""];
