@@ -4,6 +4,7 @@ import 'package:flutter_widget_use/Elements/Form/Button/Button.dart';
 import 'package:flutter_widget_use/Elements/Form/CheckBox/CheckBox.dart';
 import 'package:flutter_widget_use/Elements/Form/Radio/Radio.dart';
 import 'package:flutter_widget_use/Elements/Form/Slider/Slider.dart';
+import 'package:flutter_widget_use/Elements/Form/Switch/Switch.dart';
 import 'package:flutter_widget_use/Elements/Form/TextField/TextField.dart';
 
 class Form extends StatelessWidget {
@@ -23,6 +24,8 @@ class Form extends StatelessWidget {
           return Radio();
         } else if (index == 4) {
           return Slider();
+        } else if (index == 5) {
+          return Switch();
         }
         return Button();
       },
