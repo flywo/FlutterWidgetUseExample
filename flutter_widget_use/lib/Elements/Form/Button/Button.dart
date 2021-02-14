@@ -5,6 +5,8 @@ import 'package:flutter_widget_use/Elements/Form/Button/FlatButton/FlatButton.da
 import 'package:flutter_widget_use/Elements/Form/Button/FloatingActionButton/FloatingActionButton.dart';
 import 'package:flutter_widget_use/Elements/Form/Button/IconButton/IconButton.dart';
 import 'package:flutter_widget_use/Elements/Form/Button/OutlineButton/OutlineButton.dart';
+import 'package:flutter_widget_use/Elements/Form/Button/PopupMenuButton/PopupMenuButton.dart';
+import 'package:flutter_widget_use/Elements/Form/Button/RaisedButton/RaisedButton.dart';
 
 class Button extends StatelessWidget {
   @override
@@ -23,6 +25,10 @@ class Button extends StatelessWidget {
           return IconButton();
         } else if (index == 4) {
           return OutlineButton();
+        } else if (index == 5) {
+          return PopupMenuButton();
+        } else if (index == 6) {
+          return RaisedButton();
         }
         return DropdownButton();
       },
