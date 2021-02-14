@@ -7,6 +7,7 @@ import 'package:flutter_widget_use/Elements/Form/Button/IconButton/IconButton.da
 import 'package:flutter_widget_use/Elements/Form/Button/OutlineButton/OutlineButton.dart';
 import 'package:flutter_widget_use/Elements/Form/Button/PopupMenuButton/PopupMenuButton.dart';
 import 'package:flutter_widget_use/Elements/Form/Button/RaisedButton/RaisedButton.dart';
+import 'package:flutter_widget_use/Elements/Form/Button/RawMaterialButton/RawMaterialButton.dart';
 
 class Button extends StatelessWidget {
   @override
@@ -29,6 +30,8 @@ class Button extends StatelessWidget {
           return PopupMenuButton();
         } else if (index == 6) {
           return RaisedButton();
+        } else if (index == 7) {
+          return RawMaterialButton();
         }
         return DropdownButton();
       },
