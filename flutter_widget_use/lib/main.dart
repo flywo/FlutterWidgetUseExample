@@ -21,26 +21,57 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
 
-  static const types = ["Components", "Elements", "Themes"];
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  int _current = 0;
+  List pages = [WidgetHome(), MoreHome()];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: pages[_current],
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "组件"),
+            BottomNavigationBarItem(icon: Icon(Icons.more), label: "更多"),
+          ],
+          currentIndex: _current,
+          onTap: (index) {
+            setState(() {
+              _current = index;
+            });
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class WidgetHome extends StatelessWidget {
+
+  static const types = ["Components 部件", "Elements 元素", "Themes 主题"];
   static const components = ["Bar", "Card", "Chip", "Dialog", "Grid", "List", "Menu", "Navigation", "Panel", "Pick", "Progress", "Scaffold", "Scroll", "Tab"];
   static const elements = ["Form", "Frame", "Media"];
   static const themes = [""];
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyListView(
-        title: "Flutter Widget",
-        content: types,
-        next: (index) {
-          List<String> next;
-          if (index == 0) {
-            next = components;
-          } else if (index == 1) {
-            next = elements;
-            return MyListView(
+    return MyListView(
+      title: "Flutter Widget",
+      content: types,
+      next: (index) {
+        List<String> next;
+        if (index == 0) {
+          next = components;
+        } else if (index == 1) {
+          next = elements;
+          return MyListView(
               title: types[index],
               content: next,
               next: (index) {
@@ -49,51 +80,60 @@ class MyApp extends StatelessWidget {
                 }
                 return my.Form();
               }
-            );
-          } else {
-            next = themes;
-          }
-          return MyListView(
-            title: types[index],
-            content: next,
-            next: (index) {
-              if (index == 0) {
-                return MyBar();
-              } else if (index == 1) {
-                return MyCard();
-              } else if (index == 2) {
-                return MyChip();
-              } else if (index == 3) {
-                return MyDialog();
-              } else if (index == 4) {
-                return MyGrid();
-              } else if (index == 5) {
-                return MyList();
-              } else if (index == 6) {
-                return MyMenu();
-              } else if (index == 7) {
-                return MyNavigation();
-              } else if (index == 8) {
-                return MyPanel();
-              } else if (index == 9) {
-                return MyPicker();
-              } else if (index == 10) {
-                return MyProgress();
-              } else if (index == 11) {
-                return MyScaffold();
-              } else if (index == 12) {
-                return Scroll();
-              } else if (index == 13) {
-                return my.Tab();
-              }
-              return MyBar();
-            },
           );
-        },
-      ),
+        } else {
+          next = themes;
+        }
+        return MyListView(
+          title: types[index],
+          content: next,
+          next: (index) {
+            if (index == 0) {
+              return MyBar();
+            } else if (index == 1) {
+              return MyCard();
+            } else if (index == 2) {
+              return MyChip();
+            } else if (index == 3) {
+              return MyDialog();
+            } else if (index == 4) {
+              return MyGrid();
+            } else if (index == 5) {
+              return MyList();
+            } else if (index == 6) {
+              return MyMenu();
+            } else if (index == 7) {
+              return MyNavigation();
+            } else if (index == 8) {
+              return MyPanel();
+            } else if (index == 9) {
+              return MyPicker();
+            } else if (index == 10) {
+              return MyProgress();
+            } else if (index == 11) {
+              return MyScaffold();
+            } else if (index == 12) {
+              return Scroll();
+            } else if (index == 13) {
+              return my.Tab();
+            }
+            return MyBar();
+          },
+        );
+      },
     );
   }
 }
+
+
+class MoreHome extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text("More"),);
+  }
+}
+
+
 
 
 
