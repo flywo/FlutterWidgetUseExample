@@ -15,6 +15,7 @@ import 'package:flutter_widget_use/Components/Scaffold/Scaffold.dart';
 import 'package:flutter_widget_use/Components/Scroll/Scroll.dart';
 import 'package:flutter_widget_use/Components/Tab/Tab.dart' as my;
 import 'package:flutter_widget_use/Elements/Form/Form.dart' as my;
+import 'package:flutter_widget_use/Elements/Frame/Frame.dart';
 import 'Common/MyListView.dart';
 
 void main() {
@@ -77,6 +78,8 @@ class WidgetHome extends StatelessWidget {
               next: (index) {
                 if (index == 0) {
                   return my.Form();
+                } else if (index == 1) {
+                  return MyFrame();
                 }
                 return my.Form();
               }
