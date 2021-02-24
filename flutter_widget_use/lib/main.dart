@@ -16,6 +16,7 @@ import 'package:flutter_widget_use/Components/Scroll/Scroll.dart';
 import 'package:flutter_widget_use/Components/Tab/Tab.dart' as my;
 import 'package:flutter_widget_use/Elements/Form/Form.dart' as my;
 import 'package:flutter_widget_use/Elements/Frame/Frame.dart';
+import 'package:flutter_widget_use/Elements/Media/Media.dart';
 import 'Common/MyListView.dart';
 
 void main() {
@@ -80,6 +81,8 @@ class WidgetHome extends StatelessWidget {
                   return my.Form();
                 } else if (index == 1) {
                   return MyFrame();
+                } else if (index == 2) {
+                  return MyMedia();
                 }
                 return my.Form();
               }
