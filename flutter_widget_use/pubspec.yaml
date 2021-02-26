@@ -33,6 +33,7 @@ dependencies:
   flutter_webview_plugin: ^0.3.11
   loading_indicator_view: ^1.0.0
   city_pickers: ^0.0.1
+  image_picker: ^0.5.0
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +53,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - lib/Code/
+    - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

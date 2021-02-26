@@ -4,6 +4,8 @@ PODS:
   - Flutter (1.0.0)
   - flutter_webview_plugin (0.0.1):
     - Flutter
+  - image_picker (0.0.1):
+    - Flutter
   - loading_indicator_view (0.0.1):
     - Flutter
   - path_provider (0.0.1):
@@ -15,6 +17,7 @@ DEPENDENCIES:
   - city_pickers (from `.symlinks/plugins/city_pickers/ios`)
   - Flutter (from `Flutter`)
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
+  - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - loading_indicator_view (from `.symlinks/plugins/loading_indicator_view/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
@@ -26,6 +29,8 @@ EXTERNAL SOURCES:
     :path: Flutter
   flutter_webview_plugin:
     :path: ".symlinks/plugins/flutter_webview_plugin/ios"
+  image_picker:
+    :path: ".symlinks/plugins/image_picker/ios"
   loading_indicator_view:
     :path: ".symlinks/plugins/loading_indicator_view/ios"
   path_provider:
@@ -37,10 +42,11 @@ SPEC CHECKSUMS:
   city_pickers: b0370f4c35c201723b5b7fcce10ec29b59d5bc35
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
+  image_picker: 16e5fec1fbc87fd3b297c53e4048521eaf17cd06
   loading_indicator_view: fb6f8efecc1cd030dc3a42a39f9107eef908da86
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1
