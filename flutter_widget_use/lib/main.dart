@@ -17,6 +17,7 @@ import 'package:flutter_widget_use/Components/Tab/Tab.dart' as my;
 import 'package:flutter_widget_use/Elements/Form/Form.dart' as my;
 import 'package:flutter_widget_use/Elements/Frame/Frame.dart';
 import 'package:flutter_widget_use/Elements/Media/Media.dart';
+import 'package:flutter_widget_use/More/More.dart';
 import 'Common/MyListView.dart';
 
 void main() {
@@ -132,7 +133,7 @@ class WidgetHome extends StatelessWidget {
 class MoreHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("More"),);
+    return More();
   }
 }
 
