@@ -13,26 +13,15 @@ class _AllIconsState extends State<AllIcons> with SingleTickerProviderStateMixin
   static var _names = WidgetName2Icon.icons.keys.toList();
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    _names.sort();
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          automaticallyImplyLeading: false,
-          bottom: TabBar(
+        appBar: _TabBar(
+          tabBar: TabBar(
             tabs: [Tab(text: "列表",), Tab(text: "网格")],
           ),
+          color: Theme.of(context).primaryColor,
         ),
         body: TabBarView(
           children: [
@@ -50,10 +39,54 @@ class _AllIconsState extends State<AllIcons> with SingleTickerProviderStateMixin
                   );
                 },
                 itemCount: _names.length),
-            Text("网格")
+            GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 6,
+                  childAspectRatio: 1
+                ),
+                itemCount: _names.length,
+                itemBuilder: (context, index) {
+                  return IconButton(
+                    icon: Icon(WidgetName2Icon.icons[_names[index]]),
+                    onPressed: () {
+                        showDialog(context: context,
+                          builder: (context) {
+                              return AlertDialog(
+                                content: Row(
+                                  children: [
+                                    Text(_names[index]),
+                                    Spacer(),
+                                    Icon(WidgetName2Icon.icons[_names[index]])
+                                  ],
+                                ),
+                              );
+                          }
+                        );
+                    },
+                  );
+                }
+            )
           ],
         ),
       ),
     );
   }
+}
+
+class _TabBar extends Container implements PreferredSizeWidget {
+  final Color color;
+  final TabBar tabBar;
+
+  _TabBar({Key key, @required this.color, @required this.tabBar})
+      : super(key: key);
+
+  @override
+  Size get preferredSize => tabBar.preferredSize;
+
+  @override
+  Widget build(BuildContext context) => Material(
+    elevation: 4.0,
+    color: color,
+    child: tabBar,
+  );
 }
