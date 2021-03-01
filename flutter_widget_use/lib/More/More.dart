@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_use/More/Icons/Icons.dart';
+import 'package:flutter_widget_use/More/Native/Native.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class More extends StatelessWidget {
@@ -12,6 +13,22 @@ class More extends StatelessWidget {
       ),
       body: ListView.separated(
           itemBuilder: (context, index) {
+            if (index == 1) {
+              return ListTile(
+                title: Text("iOS与Flutter交互"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("iOS与Flutter交互"),
+                      ),
+                      body: MyNative(),
+                    );
+                  }));
+                },
+              );
+            }
             return ListTile(
               title: Text("Icons列表"),
               trailing: Icon(Icons.keyboard_arrow_right),
@@ -26,7 +43,6 @@ class More extends StatelessWidget {
                         sourceFilePath: "lib/More/Icons/Icons.dart"
                     ),
                   );
-                  return AllIcons();
                 }));
               },
             );
@@ -37,7 +53,7 @@ class More extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 1
+          itemCount: 2
       ),
     );
   }
