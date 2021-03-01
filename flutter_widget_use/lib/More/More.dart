@@ -9,7 +9,7 @@ class More extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("更多"),
+        title: Text("Flutter更多"),
       ),
       body: ListView.separated(
           itemBuilder: (context, index) {

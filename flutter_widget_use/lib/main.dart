@@ -14,6 +14,7 @@ import 'package:flutter_widget_use/Components/Progress/Progress.dart';
 import 'package:flutter_widget_use/Components/Scaffold/Scaffold.dart';
 import 'package:flutter_widget_use/Components/Scroll/Scroll.dart';
 import 'package:flutter_widget_use/Components/Tab/Tab.dart' as my;
+import 'package:flutter_widget_use/Dev/Dev.dart' as my;
 import 'package:flutter_widget_use/Elements/Form/Form.dart' as my;
 import 'package:flutter_widget_use/Elements/Frame/Frame.dart';
 import 'package:flutter_widget_use/Elements/Media/Media.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _current = 0;
-  List pages = [WidgetHome(), MoreHome()];
+  List pages = [WidgetHome(), Dev(), MoreHome()];
 
   @override
   Widget build(BuildContext context) {
@@ -41,8 +42,9 @@ class _MyAppState extends State<MyApp> {
         body: pages[_current],
         bottomNavigationBar: BottomNavigationBar(
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "组件"),
-            BottomNavigationBarItem(icon: Icon(Icons.more), label: "更多"),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Flutter组件"),
+            BottomNavigationBarItem(icon: Icon(Icons.developer_mode), label: "开发备忘"),
+            BottomNavigationBarItem(icon: Icon(Icons.more), label: "Flutter更多"),
           ],
           currentIndex: _current,
           onTap: (index) {
@@ -128,6 +130,15 @@ class WidgetHome extends StatelessWidget {
     );
   }
 }
+
+
+class Dev extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return my.Dev();
+  }
+}
+
 
 
 class MoreHome extends StatelessWidget {
