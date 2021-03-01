@@ -1,12 +1,11 @@
 /// @ClassName Dev
-/// @Description TODO
+/// @Description 开发备忘列表
 /// @Author YuHua
 /// @Date 2021-03-01 11:55 AM
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_use/Dev/GitProxy/GitProxy.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class Dev extends StatelessWidget {
   @override

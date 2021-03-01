@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 /// @ClassName GitProxy
-/// @Description TODO
+/// @Description Git使用走代理
 /// @Author YuHua
 /// @Date 2021-03-01 1:28 PM
 
