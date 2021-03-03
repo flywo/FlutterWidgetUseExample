@@ -6,6 +6,7 @@ import 'package:flutter_widget_use/More/Native/Native.dart';
 import 'package:flutter_widget_use/More/Pass/Pass.dart';
 import 'package:flutter_widget_use/More/Radius/Radius.dart';
 import 'package:flutter_widget_use/More/Router/Router.dart';
+import 'package:flutter_widget_use/More/Theme/MyTheme.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class More extends StatelessWidget {
@@ -92,6 +93,21 @@ class More extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 6) {
+              return ListTile(
+                title: Text("设置主题颜色"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("设置主题颜色"),
+                      ),
+                      body: MyTheme(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("Icons列表"),
@@ -117,7 +133,7 @@ class More extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 6
+          itemCount: 7
       ),
     );
   }
