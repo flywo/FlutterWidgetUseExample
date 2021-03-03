@@ -6,6 +6,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_use/Dev/GitProxy/GitProxy.dart';
+import 'package:flutter_widget_use/Dev/KeepAlive/KeepAlive.dart';
 
 class Dev extends StatelessWidget {
   @override
@@ -16,6 +17,22 @@ class Dev extends StatelessWidget {
       ),
       body: ListView.separated(
           itemBuilder: (context, index) {
+            if (index == 1) {
+              return ListTile(
+                title: Text("Flutter页面如何在底部tab切换时保持状态？"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("Flutter页面如何在底部tab切换时保持状态？"),
+                      ),
+                      body: MyKeepAlive(),
+                    );
+                  }));
+                },
+              );
+            }
             return ListTile(
               title: Text("如何设置git走代理？"),
               trailing: Icon(Icons.keyboard_arrow_right),
@@ -37,7 +54,7 @@ class Dev extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 1
+          itemCount: 2
       ),
     );
   }

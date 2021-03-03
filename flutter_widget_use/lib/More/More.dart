@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_use/More/EventBus/EventBus.dart';
 import 'package:flutter_widget_use/More/Icons/Icons.dart';
 import 'package:flutter_widget_use/More/Native/Native.dart';
 import 'package:flutter_widget_use/More/Pass/Pass.dart';
@@ -60,6 +61,21 @@ class More extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 4) {
+              return ListTile(
+                title: Text("event_bus使用指南"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("event_bus使用指南"),
+                      ),
+                      body: MyEventBus(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("Icons列表"),
@@ -85,7 +101,7 @@ class More extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 4
+          itemCount: 5
       ),
     );
   }
