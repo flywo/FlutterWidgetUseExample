@@ -4,6 +4,7 @@ import 'package:flutter_widget_use/More/EventBus/EventBus.dart';
 import 'package:flutter_widget_use/More/Icons/Icons.dart';
 import 'package:flutter_widget_use/More/Native/Native.dart';
 import 'package:flutter_widget_use/More/Pass/Pass.dart';
+import 'package:flutter_widget_use/More/Radius/Radius.dart';
 import 'package:flutter_widget_use/More/Router/Router.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
@@ -76,6 +77,21 @@ class More extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 5) {
+              return ListTile(
+                title: Text("设置控件圆角"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("设置控件圆角"),
+                      ),
+                      body: MyRadius(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("Icons列表"),
@@ -101,7 +117,7 @@ class More extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 5
+          itemCount: 6
       ),
     );
   }
