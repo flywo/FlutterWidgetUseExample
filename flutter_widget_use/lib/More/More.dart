@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_use/Components/Bar/Tabbar/Tabbar.dart';
 import 'package:flutter_widget_use/More/EventBus/EventBus.dart';
 import 'package:flutter_widget_use/More/Icons/Icons.dart';
 import 'package:flutter_widget_use/More/Native/Native.dart';
 import 'package:flutter_widget_use/More/Pass/Pass.dart';
 import 'package:flutter_widget_use/More/Radius/Radius.dart';
 import 'package:flutter_widget_use/More/Router/Router.dart';
+import 'package:flutter_widget_use/More/TabBar/MyTabBar.dart';
 import 'package:flutter_widget_use/More/Theme/MyTheme.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
@@ -108,6 +110,21 @@ class More extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 7) {
+              return ListTile(
+                title: Text("Tabbar和TabBarView配合"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("Tabbar和TabBarView配合"),
+                      ),
+                      body: MyTabBarView(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("Icons列表"),
@@ -133,7 +150,7 @@ class More extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 7
+          itemCount: 8
       ),
     );
   }
