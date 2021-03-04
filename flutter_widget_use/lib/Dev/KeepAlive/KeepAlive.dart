@@ -8,7 +8,7 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 
 
 const content = """
-## Flutter页面如何在底部tab切换时保持状态？
+## Flutter页面如何在切换时保持状态？
 > 页面的state实现AutomaticKeepAliveClientMixin，wantKeepAlive返回true即可。
 ```
 class _MineTabState extends State<MineTab> with AutomaticKeepAliveClientMixin {

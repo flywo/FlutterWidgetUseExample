@@ -9,6 +9,7 @@ import 'package:flutter_widget_use/Dev/Button/MyFlatButton.dart';
 import 'package:flutter_widget_use/Dev/GitProxy/GitProxy.dart';
 import 'package:flutter_widget_use/Dev/KeepAlive/KeepAlive.dart';
 import 'package:flutter_widget_use/Dev/ShrinkWrap/ShrinkWrap.dart';
+import 'package:flutter_widget_use/Dev/TabBarKeepAlive/TabBarKeepAlive.dart';
 
 class Dev extends StatelessWidget {
   @override
@@ -21,13 +22,13 @@ class Dev extends StatelessWidget {
           itemBuilder: (context, index) {
             if (index == 1) {
               return ListTile(
-                title: Text("Flutter页面如何在底部tab切换时保持状态？"),
+                title: Text("Flutter页面如何在切换时保持状态？"),
                 trailing: Icon(Icons.keyboard_arrow_right),
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                     return Scaffold(
                       appBar: AppBar(
-                        title: Text("Flutter页面如何在底部tab切换时保持状态？"),
+                        title: Text("Flutter页面如何在切换时保持状态？"),
                       ),
                       body: MyKeepAlive(),
                     );
@@ -64,6 +65,21 @@ class Dev extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 4) {
+              return ListTile(
+                title: Text("Flutter页面如何在TabBar切换时保持状态？"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("Flutter页面如何在TabBar切换时保持状态？"),
+                      ),
+                      body: MyTabBarKeepAlive(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("如何设置git走代理？"),
@@ -86,7 +102,7 @@ class Dev extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 4
+          itemCount: 5
       ),
     );
   }
