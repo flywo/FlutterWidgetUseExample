@@ -10,6 +10,7 @@ import 'package:flutter_widget_use/More/Router/Router.dart';
 import 'package:flutter_widget_use/More/TabBar/MyTabBar.dart';
 import 'package:flutter_widget_use/More/Theme/MyTheme.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
+import 'package:flutter_widget_use/More/BuildExist/BuildExist.dart';
 
 class More extends StatelessWidget {
   @override
@@ -125,6 +126,21 @@ class More extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 8) {
+              return ListTile(
+                title: Text("使用Cocoapods添加Flutter到已存在的iOS项目中"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("使用Cocoapods添加Flutter到已存在的iOS项目中"),
+                      ),
+                      body: MyBuildExist(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("Icons列表"),
@@ -150,7 +166,7 @@ class More extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 8
+          itemCount: 9
       ),
     );
   }
