@@ -5,9 +5,11 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_use/Dev/Border/Border.dart';
 import 'package:flutter_widget_use/Dev/Button/MyFlatButton.dart';
 import 'package:flutter_widget_use/Dev/GitProxy/GitProxy.dart';
 import 'package:flutter_widget_use/Dev/KeepAlive/KeepAlive.dart';
+import 'package:flutter_widget_use/Dev/LayoutBuilder/LayoutBuilder.dart';
 import 'package:flutter_widget_use/Dev/ShrinkWrap/ShrinkWrap.dart';
 import 'package:flutter_widget_use/Dev/TabBarKeepAlive/TabBarKeepAlive.dart';
 
@@ -80,6 +82,36 @@ class Dev extends StatelessWidget {
                   }));
                 },
               );
+            } else if (index == 5) {
+              return ListTile(
+                title: Text("LayoutBuilder作用？"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("LayoutBuilder作用？"),
+                      ),
+                      body: MyLayoutBuilder(),
+                    );
+                  }));
+                },
+              );
+            } else if (index == 6) {
+              return ListTile(
+                title: Text("如何设置圆角边框？"),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        title: Text("如何设置圆角边框？"),
+                      ),
+                      body: MyBorder(),
+                    );
+                  }));
+                },
+              );
             }
             return ListTile(
               title: Text("如何设置git走代理？"),
@@ -102,7 +134,7 @@ class Dev extends StatelessWidget {
               color: Colors.grey[500],
             );
           },
-          itemCount: 5
+          itemCount: 7
       ),
     );
   }
